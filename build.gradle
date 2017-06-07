@@ -21,6 +21,10 @@ repositories {
 	mavenCentral()
 }
 
+jar {
+	baseName = "service-registry"
+}
+
 
 ext {
 	springCloudVersion = 'Dalston.SR1'

@@ -1,0 +1,12 @@
+applications:
+- name: service-registry
+  path: artifact\ecoles-service-registry-(.*).jar
+  memory: 512M
+  buildpack: java_buildpack
+  instances: 1
+  random-route: true
+  env:
+    SPRING_PROFILES_ACTIVE: dev
+  services:
+    - logs-pt-service-registry
+    - config-store

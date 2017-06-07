@@ -9,4 +9,3 @@ applications:
     SPRING_PROFILES_ACTIVE: dev
   services:
     - logs-pt-service-registry
-    - config-store
